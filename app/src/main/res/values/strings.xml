@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Online Library</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="title_books">Browse Books</string>
+    <string name="title_borrowings">Borrowed Books</string>
+
+    <string name="lbl_firstname">First name</string>
+    <string name="lbl_lastname">Last name</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_telephone">Telephone</string>
+    <string name="lbl_address">Address</string>
+    <string name="profile_information_title">Profile information</string>
+
+    <string name="edit_profile_btn">Edit profile</string>
+    <string name="update_profile_btn">Update</string>
+
+    <string name="value_firstname">Jane</string>
+    <string name="value_lastname">Doe</string>
+    <string name="value_email">jane.doe@email.com</string>
+    <string name="value_telephone">+40722222222</string>
+    <string name="value_address">str Observatorului, nr 34</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="email_login">Email</string>
+    <string name="email_hint_login">enter your email</string>
+    <string name="password_hint_login">Password</string>
+    <string name="login_lbl">Login</string>
+</resources>

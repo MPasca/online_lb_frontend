@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/main_frame_margin"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="@dimen/main_frame_margin"
+    android:layout_marginBottom="40dp"
+    android:background="@color/black"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/txtval_address"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/value_address"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toEndOf="@+id/lbl_address"
+        app:layout_constraintTop_toBottomOf="@+id/txtval_telephone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtval_telephone"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/value_telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/lbl_telephone"
+        app:layout_constraintTop_toBottomOf="@+id/txtval_email" />
+
+    <TextView
+        android:id="@+id/txtval_email"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/value_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toEndOf="@+id/lbl_email"
+        app:layout_constraintTop_toBottomOf="@+id/txtval_lastname" />
+
+    <TextView
+        android:id="@+id/text_profile"
+        style="@style/label_style"
+        android:paddingTop="16dp"
+        android:text="@string/profile_information_title"
+        android:textAlignment="center"
+        android:textColor="@color/alabaster"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/lbl_first_name"
+        style="@style/text_style"
+        android:text="@string/lbl_firstname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_profile" />
+
+    <TextView
+        android:id="@+id/lbl_last_name"
+        style="@style/label_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/lbl_lastname"
+        android:textColor="@color/alabaster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_first_name" />
+
+    <TextView
+        android:id="@+id/lbl_email"
+        style="@style/label_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/lbl_email"
+        android:textColor="@color/alabaster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_last_name" />
+
+    <TextView
+        android:id="@+id/lbl_telephone"
+        style="label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/lbl_telephone"
+        android:textColor="@color/alabaster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_email" />
+
+    <TextView
+        android:id="@+id/lbl_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/lbl_address"
+        android:textColor="@color/alabaster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_telephone" />
+
+    <Button
+        android:id="@+id/btn_edit_profile"
+        style="@style/label_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/davys_grey"
+        android:paddingBottom="@dimen/small_padding"
+        android:text="@string/edit_profile_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_address"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <Button
+        android:id="@+id/btn_update"
+        style="@style/label_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/davys_grey"
+        android:paddingBottom="@dimen/small_padding"
+        android:text="@string/update_profile_btn"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_address"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/txtval_firstname"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/value_firstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/lbl_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_profile" />
+
+    <TextView
+        android:id="@+id/txtval_lastname"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/value_lastname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/lbl_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/txtval_firstname" />
+
+    <EditText
+        android:id="@+id/edit_firstname"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="first name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cambridge_blue"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_profile" />
+
+    <EditText
+        android:id="@+id/edit_lastname"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="last name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cambridge_blue"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_firstname" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="address"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cambridge_blue"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/lbl_address"
+        app:layout_constraintTop_toBottomOf="@+id/edit_telephone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/cambridge_blue"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_lastname" />
+
+    <EditText
+        android:id="@+id/edit_telephone"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="telephone"
+        android:inputType="phone"
+        android:textColorHint="@color/cambridge_blue"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_telephone"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
