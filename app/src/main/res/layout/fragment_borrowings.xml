@@ -8,7 +8,7 @@
     android:layout_marginEnd="@dimen/main_frame_margin"
     android:layout_marginBottom="40dp"
     android:background="@color/black"
-    tools:context=".ui.borrowings.BorrowingsFragment">
+    tools:context=".ui.BorrowingsFragment">
 
     <TextView
         android:id="@+id/text_borrowings"
@@ -30,10 +30,7 @@
         app:layout_constraintVertical_bias="0.011" />
 
     <ListView
-        style="@style/text_style"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="@color/alabaster"
+        style="@style/list_style"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="101dp" />
 

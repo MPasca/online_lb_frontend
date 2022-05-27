@@ -35,6 +35,26 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.android.material:material:1.7.0-alpha01'
+
+    implementation ('com.squareup.retrofit2:retrofit:2.3.0') {
+        // exclude Retrofit’s OkHttp dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+
+    implementation 'com.squareup:otto:1.3.8'
+    implementation ('com.squareup.retrofit2:converter-gson:2.3.0'){
+        // exclude Retrofit’s OkHttp dependency module and define your own module import
+        implementation 'com.squareup.okio:okio:1.13.0'
+        exclude module: 'okhttp'
+    }
+    //compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation('com.squareup.okhttp3:okhttp-urlconnection:3.2.0') {
+        exclude module: 'okhttp'
+    }
+
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

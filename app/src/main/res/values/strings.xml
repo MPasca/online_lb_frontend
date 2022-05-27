@@ -26,4 +26,12 @@
     <string name="email_hint_login">enter your email</string>
     <string name="password_hint_login">Password</string>
     <string name="login_lbl">Login</string>
+    <string name="enter_your_telephone_number">enter your telephone number</string>
+    <string name="confirm_npassword">Confirm\npassword</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_your_last_name">enter your last name</string>
+    <string name="enter_your_first_name">enter your first name</string>
+    <string name="re_enter_your_password">re-enter your password</string>
+    <string name="sign_up_lbl">SIGN UP</string>
+    <string name="enter_your_address">enter your address</string>
 </resources>

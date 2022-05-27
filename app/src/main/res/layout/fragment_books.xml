@@ -8,7 +8,7 @@
     android:layout_marginEnd="@dimen/main_frame_margin"
     android:layout_marginBottom="40dp"
     android:background="@color/black"
-    tools:context=".ui.books.BooksFragment">
+    tools:context=".ui.BooksFragment">
 
     <TextView
         android:id="@+id/text_books"
@@ -29,42 +29,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.011" />
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="665dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_books">
+    <ListView
+        android:id="@+id/book_list_view"
+        android:layout_width="390dp"
+        android:layout_height="623dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="67dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-            </TableLayout>
-        </LinearLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

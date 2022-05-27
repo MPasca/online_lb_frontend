@@ -1,15 +1,15 @@
-package android.example.myapplication.ui.profile
+package android.example.myapplication.ui
 
 import android.example.myapplication.R
+import android.example.myapplication.databinding.FragmentProfileBinding
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import android.example.myapplication.databinding.FragmentProfileBinding
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 
 class ProfileFragment : Fragment() {
 
@@ -31,9 +31,13 @@ class ProfileFragment : Fragment() {
     lateinit var telephoneTextView : TextView
     lateinit var addressTextView : TextView
 
+    /**
+     * main method that's needed to instantiate the view
+     * @return root - the view
+     */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-            _binding = FragmentProfileBinding.inflate(inflater, container, false)
-            val root: View = binding.root
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val root: View = binding.root
 
 
         val editButton = root.findViewById<Button>(R.id.btn_edit_profile)
@@ -51,9 +55,13 @@ class ProfileFragment : Fragment() {
             updateInfo()
         }
 
-            return root
+        return root
     }
 
+    /**
+     * instantiates both the text edit and the text view fields
+     * hides the text view and make the text edits visible so that the user can update the info
+     */
     private fun extractInfo(view: View) {
         editFirstName = view.findViewById<EditText>(R.id.edit_firstname)
         editLastName = view.findViewById<EditText>(R.id.edit_lastname)
@@ -81,6 +89,9 @@ class ProfileFragment : Fragment() {
         editAddress.visibility = View.VISIBLE
     }
 
+    /**
+     * gets the data from the text edit fields and updates the text view fields with it
+     */
     private fun updateInfo(){
         if(!editFirstName.text.equals("")){
             firstnameTextView.text = editFirstName.text

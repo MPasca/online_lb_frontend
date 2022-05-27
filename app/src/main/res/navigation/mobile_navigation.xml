@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="android.example.myapplication.ui.profile.ProfileFragment"
+        android:name="android.example.myapplication.ui.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_books"
-        android:name="android.example.myapplication.ui.books.BooksFragment"
+        android:name="android.example.myapplication.ui.BooksFragment"
         android:label="@string/title_books"
         tools:layout="@layout/fragment_books" />
 
     <fragment
         android:id="@+id/navigation_borrowings"
-        android:name="android.example.myapplication.ui.borrowings.BorrowingsFragment"
+        android:name="android.example.myapplication.ui.BorrowingsFragment"
         android:label="@string/title_borrowings"
         tools:layout="@layout/fragment_borrowings" />
 </navigation>

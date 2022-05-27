@@ -19,5 +19,28 @@ TO DO:
 login & sign up
 revert changes button for profile
 get books from DB and send them to the app
-implement search field for books
 logout
+
+update May 26th 2022, 10:37 pm
+I tried to implement both the personal data information update in ProfileFragment
+    & the fetchBooks method that fetches the book list from the DB through the backend's end points
+    but for some god forsaken reason these stuff won't work and I'm pissed, and tired, my head is hurting and IMMA THROW HANDS I SWEAR TO GOD
+ok that's all for now, byeee
+
+
+update May 27th 2022, 8:08 pm
+I reiterated last night's problems, but to no avail. Apparently there's some kind of socket error.
+Rewritten the classes (all of them) in kotlin
+
+
+So far, what the app does (or tries to do):
+The application has three fragments that represent the activities of the application.
+1st one: Profile
+    fetches the information of the current reader and prints it on the screen, so that the current user can see it
+    can update the information of the current reader
+
+2nd one: Books
+    can browse through the books currently found in the library
+
+3rd one: Borrowings
+    same with books, a reader should be able to browse through it's history of borrowed books.

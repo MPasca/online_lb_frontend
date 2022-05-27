@@ -1,29 +1,30 @@
-package android.example.myapplication.ui.books
+package android.example.myapplication.ui
 
+import android.example.myapplication.databinding.FragmentBorrowingsBinding
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import android.example.myapplication.databinding.FragmentBooksBinding
 
-class BooksFragment : Fragment() {
+class BorrowingsFragment : Fragment() {
 
-    private var _binding: FragmentBooksBinding? = null
+    private var _binding: FragmentBorrowingsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
+    /**
+     * creates the view fragment
+     * currently it does nothing
+     */
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentBooksBinding.inflate(inflater, container, false)
+        _binding = FragmentBorrowingsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root

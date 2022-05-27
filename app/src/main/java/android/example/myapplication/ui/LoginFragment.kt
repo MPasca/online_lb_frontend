@@ -1,5 +1,6 @@
-package android.example.myapplication
+package android.example.myapplication.ui
 
+import android.example.myapplication.R
 import android.example.myapplication.databinding.FragmentLoginBinding
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,7 +22,7 @@ class LoginFragment : Fragment() {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val btnLogin = root.findViewById<Button>(R.id.btn_login)
+        val btnLogin = root.findViewById<Button>(R.id.btn_signup)
         btnLogin.setOnClickListener{
             checkCredentials(root)
         }
@@ -29,12 +30,15 @@ class LoginFragment : Fragment() {
         return root
     }
 
+    /**
+     * checks that the current written credentials exist in the database (or in this case, they are hardcoded)
+     */
     private fun checkCredentials(view : View){
         val dummyEmail = "jane.doe@email.com"
         val dummyPassword = "password"
 
-        loginEmail = view.findViewById(R.id.login_email_txt)
-        loginPassword = view.findViewById(R.id.login_password_txt)
+        loginEmail = view.findViewById(R.id.signup_email_txt)
+        loginPassword = view.findViewById(R.id.signup_password_txt)
 
         if(loginEmail.text.equals(dummyEmail)){
             if(loginPassword.text.equals(dummyPassword)){
